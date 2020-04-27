@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         {
            Toast.makeText(this, "Logare reusita", Toast.LENGTH_SHORT).show()
         } else {
-            Log.d("Parola esuata", password.text.toString())
-            Toast.makeText(this, "Eroare logare", Toast.LENGTH_SHORT).show()
+              Toast.makeText(this, "Eroare logare", Toast.LENGTH_SHORT).show()
         }
 
     }
