@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        if(loginVerification.verify(email.text.toString(), password.text.toString()))
+        if(loginVerification.verifyEmaiAndPassword(email.text.toString(), password.text.toString()))
         {
            Toast.makeText(this, "Logare reusita", Toast.LENGTH_SHORT).show()
         } else {
