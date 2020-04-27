@@ -2,7 +2,6 @@ package com.example.arhiapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -29,7 +28,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        if(loginVerification.verify(email.text.toString(), password.text.toString()))
+        if(loginVerification.verifyCredentials(email.text.toString(), password.text.toString()))
         {
            Toast.makeText(this, "Logare reusita", Toast.LENGTH_SHORT).show()
         } else {
